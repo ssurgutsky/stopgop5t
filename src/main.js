@@ -22,3 +22,7 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+Vue.config.errorHandler = (err, vm, info) => {
+  alert(err)
+}
