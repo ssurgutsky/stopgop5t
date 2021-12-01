@@ -2,7 +2,7 @@
 
 export default {
   // Increase this on every update to reload assets for new on startup
-  GAME_VERSION: 34,
+  GAME_VERSION: 1,
   // Release = true
   CACHE_ENABLED: true,
 
@@ -12,7 +12,7 @@ export default {
   // Goto this mark if not found player's one on LOAD button pressing
   DEFAULT_LOAD_MARK_NAME: 'START',
   // Just a name of Index DB for this game
-  INDEXEDDB_STORE_NAME: 'store_sg5',
+  INDEXEDDB_STORE_NAME: 'store_sg5t',
   // Google Play IAP
   GP_PRODUCT1_NAME: 'com.skystairgames.sg5.coin1',
   GP_PRODUCT2_NAME: 'com.skystairgames.sg5.episodes',
