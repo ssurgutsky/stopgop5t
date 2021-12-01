@@ -1,0 +1,16 @@
+Как из снятого видео делать .webm с прозрачным фоном для игры.
+Как объединять 2 и более GIFs с прозрачным фоном в один и конвертировать в .webm
+
+1. Снимаем видео 1920x1080 FHD
+2. https://www.unscreen.com/upload
+3. После преобразования ставим вкладку Transparent, кликаем DOWNLOAD as GIF
+4. В Vegas налагаем с другими GIFs
+5. В Vagas -> render as Image sequence -> PNGs
+6. https://gifmaker.me/ загружаем все PNGs
+7. Ставим Animation Speed 20
+8. Create GIF Animation (справа снизу) - gif file
+9. Загружаем этот гиф файл https://video.online-convert.com/ru/convert-to-webm
+10. Выбираем 640х480,
+    Работа с размером: В случае необходимости обрежьте изображение (исходное 640х360 всего)
+    Устранить дефекты видео: Да
+11. Конвертируем в .webm, вставляем в игру

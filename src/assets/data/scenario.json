@@ -1,0 +1,36 @@
+﻿{
+  "node": [
+    {
+      "node": [
+        {
+          "node": [
+            {
+              "node": [
+                {
+                  "node": [
+                    {
+                      "node": [
+                        {
+                          "_mark": "mark_78xmw99h8zd7cvh723d2",
+                          "_content": "[LABEL ...][VIDEO gop1_intro.mp4][MUSIC none][AMBIENT ambient]"
+                        }
+                      ],
+                      "_mark": "",
+                      "_content": "[LABEL ПОГНАЛИ!]"
+                    }
+                  ],
+                  "_mark": "PREPARE",
+                  "_content": "[LABEL Симулятор Гопника, часть 5. Подстава.\n(версия 1.{this.game_version})][BGNDVIDEO intro.mp4][BGNDIMAGE title.png][MUSIC music_intro][ANSWERSORDER ON]"
+                }
+              ],
+              "_mark": "mark_jq3z9230b0d555d900as",
+              "_content": "[LABEL НАЧАТЬ ИГРУ]"
+            }
+          ],
+          "_mark": "START",
+          "_content": "[LABEL Симулятор Гопника, часть 5. Подстава.\n(версия 1.{this.game_version})][BGPICTURE bg.jpg&intro_gops.png&title.png][ANSWERSORDER ON]"
+        }
+      ]
+    }
+  ]
+}
