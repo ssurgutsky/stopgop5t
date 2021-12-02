@@ -23,6 +23,10 @@ new Vue({
   template: '<App/>'
 })
 
-Vue.config.errorHandler = (err, vm, info) => {
-  alert(err)
+// Vue.config.errorHandler = (err, vm, info) => {
+//   alert(err)
+// }
+
+window.onerror = function (message, source, lineno, colno, error) {
+  alert(error, message)
 }
