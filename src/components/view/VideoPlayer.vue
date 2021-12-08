@@ -1,9 +1,9 @@
 <template>
   <div>
-    <video autoplay="autoplay" playsinline muted preload="auto" :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
+    <video playsinline muted :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
-    <video autoplay="autoplay" playsinline muted preload="auto" :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
+    <video playsinline muted :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
   </div>
@@ -72,22 +72,27 @@ export default {
       if (this.currentPlayerNo === 1 || this.isFirstRun) {
         this.videoPlayer1.loop = loop
         this.videoPlayer1.src = this.getVideoSrc(name)
-        this.videoPlayer1.load()
-        this.videoPlayer1.pause()
-        setTimeout(() => {
-          this.videoPlayer1.play()
-        }, 10)
+        this.playVideoPlayer(this.videoPlayer1)
       }
 
       if (this.currentPlayerNo === 2 || this.isFirstRun) {
         this.videoPlayer2.loop = loop
         this.videoPlayer2.src = this.getVideoSrc(name)
-        this.videoPlayer2.load()
-        this.videoPlayer2.pause()
-        setTimeout(() => {
-          this.videoPlayer2.play()
-        }, 10)
+        this.playVideoPlayer(this.videoPlayer2)
       }
+    },
+
+    playVideoPlayer (videoPlayer) {
+      videoPlayer.pause()
+      setTimeout(() => {
+        videoPlayer.play()
+          .then((res) => {
+            console.log('playing start', res)
+          })
+          .catch((err) => {
+            alert('error playing', err)
+          })
+      }, 0)
     },
 
     getVideoSrc (name) {
@@ -120,7 +125,7 @@ export default {
     },
 
     onCanPlay (event) {
-      // console.log('canPlay')
+      console.log('canPlay')
 
       if (this.currentPlayerNo === 1 || this.isFirstRun) {
         setTimeout(() => {
