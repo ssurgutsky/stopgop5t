@@ -73,21 +73,21 @@ export default {
         this.videoPlayer1.loop = loop
         this.videoPlayer1.src = this.getVideoSrc(name)
         this.videoPlayer1.load()
-        // this.videoPlayer1.play()
-        // this.videoPlayer1.pause()
-        // setTimeout(() => {
-        //   this.videoPlayer1.play()
-        // }, 10)
+        this.videoPlayer1.play()
+        this.videoPlayer1.pause()
+        setTimeout(() => {
+          this.videoPlayer1.play()
+        }, 10)
       }
 
       if (this.currentPlayerNo === 2 || this.isFirstRun) {
         this.videoPlayer2.loop = loop
         this.videoPlayer2.src = this.getVideoSrc(name)
         this.videoPlayer2.load()
-        // this.videoPlayer2.pause()
-        // setTimeout(() => {
-        //   this.videoPlayer2.play()
-        // }, 10)
+        this.videoPlayer2.pause()
+        setTimeout(() => {
+          this.videoPlayer2.play()
+        }, 10)
       }
     },
 
