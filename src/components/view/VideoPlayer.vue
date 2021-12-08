@@ -1,9 +1,9 @@
 <template>
   <div>
-    <video autoplay playsinline controls muted :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay playsinline controls muted preload="metadata" :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
-    <video autoplay playsinline controls muted :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay playsinline controls muted preload="metadata" :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
   </div>
