@@ -1,9 +1,9 @@
 <template>
   <div>
-    <video autoplay playsInline controls muted preload="metadata" :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay="autoplay" playsinline muted preload="auto" :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
-    <video autoplay playsInline controls muted preload="metadata" :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay="autoplay" playsinline muted preload="auto" :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
       <source type="video/mp4">
     </video>
   </div>
@@ -73,7 +73,6 @@ export default {
         this.videoPlayer1.loop = loop
         this.videoPlayer1.src = this.getVideoSrc(name)
         this.videoPlayer1.load()
-        this.videoPlayer1.play()
         this.videoPlayer1.pause()
         setTimeout(() => {
           this.videoPlayer1.play()
