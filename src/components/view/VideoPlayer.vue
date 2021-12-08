@@ -125,7 +125,7 @@ export default {
     },
 
     onCanPlay (event) {
-      console.log('canPlay')
+      alert('canPlay')
 
       if (this.currentPlayerNo === 1 || this.isFirstRun) {
         setTimeout(() => {
