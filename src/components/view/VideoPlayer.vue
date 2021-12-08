@@ -1,8 +1,10 @@
 <template>
   <div>
     <video autoplay playsinline muted :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
+      <source type="video/mp4">
     </video>
     <video autoplay playsinline muted :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
+      <source type="video/mp4">
     </video>
   </div>
 </template>
