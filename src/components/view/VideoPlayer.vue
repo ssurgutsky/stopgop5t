@@ -1,8 +1,8 @@
 <template>
   <div>
-    <video playsinline preload="metadata" :style="styleObject1" autoplay :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay playsinline muted :style="styleObject1" :loop="loop" ref="videoPlayer1" @canplay="onCanPlay" @ended="onEnd">
     </video>
-    <video playsinline preload="metadata" :style="styleObject2" autoplay :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
+    <video autoplay playsinline muted :style="styleObject2" :loop="loop" ref="videoPlayer2" @canplay="onCanPlay" @ended="onEnd">
     </video>
   </div>
 </template>
