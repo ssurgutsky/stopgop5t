@@ -1,5 +1,5 @@
 [START]Симулятор Гопника, часть 5. Подстава.\n(версия 1.{this.game_version})[ANSWERSORDER ON][BGPICTURE bg.jpg&intro_gops.png&title.png]
 	[mark_jq3z9230b0d555d900as]НАЧАТЬ ИГРУ
-		[PREPARE]Симулятор Гопника, часть 5. Подстава.\n(версия 1.{this.game_version})[ANSWERSORDER ON][BGNDIMAGE title.png][BGNDVIDEO intro.mp4][MUSIC music_intro]
+		[PREPARE]Симулятор Гопника, часть 5. Подстава.\n(версия 1.{this.game_version})[ANSWERSORDER ON][BGNDIMAGE title.png][BGNDVIDEO intro.mov][MUSIC music_intro]
 			ПОГНАЛИ!
 				[mark_78xmw99h8zd7cvh723d2]...[VIDEO gop1_intro.mp4][AMBIENT ambient][MUSIC none]
